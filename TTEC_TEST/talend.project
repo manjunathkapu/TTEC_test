@@ -5,6 +5,13 @@
     <componentsSettings xmi:id="_ys5igaPJEeyWs8XZ25ffQw" name="DI|tArrayIn" family="Technical"/>
     <componentsSettings xmi:id="_ys5igqPJEeyWs8XZ25ffQw" name="DI|tArray" family="Technical"/>
     <componentsSettings xmi:id="_ys5ig6PJEeyWs8XZ25ffQw" name="DI|tHashOutput" family="Technical"/>
+    <componentsSettings xmi:id="_u3wrcKRiEeysy_hK4Cv7hg" name="DI|tArrayIn" family="Technical"/>
+    <componentsSettings xmi:id="_u3xSgKRiEeysy_hK4Cv7hg" name="DI|tSAPIDocInput" family="Business/SAP"/>
+    <componentsSettings xmi:id="_u3xSgaRiEeysy_hK4Cv7hg" name="DI|tAccessOutputBulkExec" family="Databases/DB Specifics/Access"/>
+    <componentsSettings xmi:id="_u3xSgqRiEeysy_hK4Cv7hg" name="DI|tAccessBulkExec" family="Databases/DB Specifics/Access"/>
+    <componentsSettings xmi:id="_u3xSg6RiEeysy_hK4Cv7hg" name="DI|tHashOutput" family="Technical"/>
+    <componentsSettings xmi:id="_u3xShKRiEeysy_hK4Cv7hg" name="DI|tArray" family="Technical"/>
+    <componentsSettings xmi:id="_u3x5kKRiEeysy_hK4Cv7hg" name="DI|tHashInput" family="Technical"/>
     <migrationTask xmi:id="_ujBZwKCtEeyqvcmiLbDQdw" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_uh0f4qCtEeyqvcmiLbDQdw" login="mrkusa1986@trial37867.us.talend.com" firstName="Manjunath" lastName="Kapu" type="DQ"/>
