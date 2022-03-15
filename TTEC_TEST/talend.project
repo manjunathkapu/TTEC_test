@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_uh0f4aCtEeyqvcmiLbDQdw" label="TTEC_test" language="java" technicalLabel="TTEC_TEST" author="_uh0f4qCtEeyqvcmiLbDQdw" productVersion="Talend Cloud Data Management Platform-8.0.1.20211109_1610" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/manjunathkapu/TTEC_test.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3" bigData="false">
+  <TalendProperties:Project xmi:id="_uh0f4aCtEeyqvcmiLbDQdw" label="TTEC_test" language="java" technicalLabel="TTEC_TEST" author="_uh0f4qCtEeyqvcmiLbDQdw" productVersion="Talend Cloud Data Management Platform-8.0.1.20220218_1542-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/manjunathkapu/TTEC_test.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3" bigData="false">
     <componentsSettings xmi:id="_ys5igKPJEeyWs8XZ25ffQw" name="DI|tHashInput" family="Technical"/>
     <componentsSettings xmi:id="_ys5igaPJEeyWs8XZ25ffQw" name="DI|tArrayIn" family="Technical"/>
     <componentsSettings xmi:id="_ys5igqPJEeyWs8XZ25ffQw" name="DI|tArray" family="Technical"/>
