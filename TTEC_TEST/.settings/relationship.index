@@ -34,6 +34,29 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_0f5dwILmEeyTLsnPve2qpA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_FSA9QBM8Eei3fr9ebJ7Y-w",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_0oBNIAJ-EeqJhY8BL1gVEw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_501IQBM7Eei3fr9ebJ7Y-w",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_0oBNIAJ-EeqJhY8BL1gVEw - INVENTORY",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_2s3SMJ9OEeyStfBzYNtceA",
     "version" : "0.1",
     "type" : "job"
@@ -95,6 +118,21 @@
     "id" : "built-in",
     "version" : "Latest",
     "type" : "context"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_nT6r0IK-EeyTLsnPve2qpA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_0oBNIAJ-EeqJhY8BL1gVEw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_0oBNIAJ-EeqJhY8BL1gVEw - INVENTORY",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
