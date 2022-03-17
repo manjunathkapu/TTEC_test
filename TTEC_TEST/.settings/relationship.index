@@ -194,12 +194,8 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_0cHjYKX4EeyGmdNmad6ZHA",
+    "id" : "built-in",
     "version" : "Latest",
     "type" : "context"
-  }, {
-    "id" : "_UTllAKRpEeyLoNUt839bQA",
-    "version" : "Latest",
-    "type" : "property"
   } ]
 } ]
