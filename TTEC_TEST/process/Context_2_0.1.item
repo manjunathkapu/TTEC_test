@@ -7,13 +7,13 @@
     <contextParameter comment="" internalId="_U4nQkaRcEeyO2eVKg3Wceg" name="parallelthreads" prompt="parallelthreads?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
     <contextParameter comment="" internalId="_60ObYKU8Eey8lNFTp11arw" name="commitsize" prompt="commitsize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
     <contextParameter comment="" internalId="_sNzmcKkfEeyHTd_gHpKfgQ" name="in_file_location" prompt="in_file_location?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_mh6IsKkhEeyHTd_gHpKfgQ" name="Oracle_Login" prompt="Oracle_Login?" promptNeeded="false" repositoryContextId="_-IYOsKPGEeyWs8XZ25ffQw" type="id_String" value="manju"/>
-    <contextParameter comment="" internalId="_mh6IsakhEeyHTd_gHpKfgQ" name="Oracle_Server" prompt="Oracle_Server?" promptNeeded="false" repositoryContextId="_-IYOsKPGEeyWs8XZ25ffQw" type="id_String" value="localhost"/>
-    <contextParameter comment="" internalId="_mh6IsqkhEeyHTd_gHpKfgQ" name="Oracle_ServiceName" prompt="Oracle_ServiceName?" promptNeeded="false" repositoryContextId="_-IYOsKPGEeyWs8XZ25ffQw" type="id_String" value="ORCL"/>
-    <contextParameter comment="" internalId="_mh6Is6khEeyHTd_gHpKfgQ" name="Oracle_AdditionalParams" prompt="Oracle_AdditionalParams?" promptNeeded="false" repositoryContextId="_-IYOsKPGEeyWs8XZ25ffQw" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_mh6ItKkhEeyHTd_gHpKfgQ" name="Oracle_Schema" prompt="Oracle_Schema?" promptNeeded="false" repositoryContextId="_-IYOsKPGEeyWs8XZ25ffQw" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_mh6ItakhEeyHTd_gHpKfgQ" name="Oracle_Port" prompt="Oracle_Port?" promptNeeded="false" repositoryContextId="_-IYOsKPGEeyWs8XZ25ffQw" type="id_String" value="1521"/>
-    <contextParameter comment="" internalId="_mh6ItqkhEeyHTd_gHpKfgQ" name="Oracle_Password" prompt="Oracle_Password?" promptNeeded="false" repositoryContextId="_-IYOsKPGEeyWs8XZ25ffQw" type="id_Password" value="enc:system.encryption.key.v1:tqqurIp/OaPs4npqMqGA6Xkn29gNVXSLXhXbbjf161oK"/>
+    <contextParameter comment="" internalId="_mh6IsKkhEeyHTd_gHpKfgQ" name="Oracle_Login" prompt="Oracle_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_mh6IsakhEeyHTd_gHpKfgQ" name="Oracle_Server" prompt="Oracle_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_mh6IsqkhEeyHTd_gHpKfgQ" name="Oracle_ServiceName" prompt="Oracle_ServiceName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_mh6Is6khEeyHTd_gHpKfgQ" name="Oracle_AdditionalParams" prompt="Oracle_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_mh6ItKkhEeyHTd_gHpKfgQ" name="Oracle_Schema" prompt="Oracle_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_mh6ItakhEeyHTd_gHpKfgQ" name="Oracle_Port" prompt="Oracle_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_mh6ItqkhEeyHTd_gHpKfgQ" name="Oracle_Password" prompt="Oracle_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -60,7 +60,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:UO+Epe7uMMA1zGE0B2d2fsVIWBYQo/kIkrY7Tj3i"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:oK+a/5fcWuE3C4qzXw4WTIKLyHeOQq4nOwCuV4AO"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -95,7 +95,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:l0xjP/RumPcMtbhvqVe7V5TD9e2XUVcCXyDrL+rL"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:y+ApzPLzwjig7Q54EZxRqwdGqy8tbeaqODn+nKug"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -3633,7 +3633,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" show="false" value="context.connection_NCRXDB15_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.connection_NCRXDB15_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:XpBSxtHT+ShD/8kXhPtd60fFoNwyeGVk/wSNvy7dNRe+93Q9dTdu4xYb8O25O/gTQ0UWNxqzxxcnwHjNOOIqow=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:uu0K8EkAgLFpuoSjy9n8s634wdzcoU2tvJSYrI2KThTAPxytgdtem4Up/aylVL9n0iII40Y372n9TaUgHa7g7Q=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.TableName1"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
@@ -5603,7 +5603,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" show="false" value="context.connection_NCRXDB15_Schema"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.connection_NCRXDB15_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:m3Flhh+BJdJWdA7pXp+RNsE20dmb7g+zjfbHbJqhWeqKRNJPmyRH3wMGK4RFIKVZASXxKoC4ansgw2rSeM3xTQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:PfC5w5BfIhAT33E3DpciPAliihXPMzGtlaI9PcRPUEZup7nIyH/9ngNhogKeEuCg/vudy1FMvwatunEgIIraMA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.TableName2"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
@@ -7625,7 +7625,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.connection_NCRXDB15_Schema"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="Oracle"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.connection_NCRXDB15_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:w0Q5Wtm2DVauHw0P1K4onigAU+mERBaIWMnzA0aHNqmhJJUxTDnjvSnhjvnAwCmChhGeZWZqm9woboqAcb9A5g=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:5Jz/3vhexvug6eRJW8FIdh8k6QaqTfe/e5fLmowfwYMsaTPGjy5RyY/mZHs86vy6pD5yoMB2lOM5FJAu0QDD6A=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -7668,13 +7668,13 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.Oracle_ServiceName"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Oracle_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.Oracle_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uPCYDjHg4dB7COwNOAatFzcOY9tCKOYN2eBvqiCvO5qUZN9HdwqeE4qUnsGi9s6yF5cS"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0rZq8HuCc3GWFcdJI25e7wfItSEOVJIF/uToHRNwh9arlsfFpZza6Qcpja8pAEZGp2wJ"/>
     <elementParameter field="CHECK" name="USE_SSL" show="false" value="false"/>
     <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:3byIqrXWnBuT0Id2VYPUJ1rUXFu9c+VCGJLPE81+"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:oJZ3RCHfU9mp3oi9L9QseeGxxjxgvPfektU9jVxD"/>
     <elementParameter field="CHECK" name="NEED_CLIENT_AUTH" show="false" value="false"/>
     <elementParameter field="FILE" name="SSL_KEYSTORE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:70ydS2BrHIoV1pfyL1Rwy2qEw8dHGW9F6a2nEx2C"/>
+    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:BYVuYZy4AWY+4c5yszo9cdtd2ynk+mUC2K2mLujI"/>
     <elementParameter field="CHECK" name="DISABLE_CBC_PROTECTION" show="false" value="true"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -7800,13 +7800,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fed9fcb2-a12f-48af-8260-c19328d9a7a8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FYoK9gquogYekn3OuD1+HHOWrvUI0X4ktevb11rDQedFMlnmBcm9H0Ufn3XObbG34FnanaYxjbcf&#13;
-a7xMhJZKrQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_32eadd18-65eb-48c2-a8fb-76676b5fe667"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Tt9zkqbT2iAIKNPEmisbrEjQaG5lJa9quDGQ+V4Uo65mNMXxY4aalFHD3jr5LqYxMPXm6ahud/oL&#13;
-Lpgxc3U6Xg==</DigestValue></Reference></SignedInfo><SignatureValue>Dn2x8MonfbEXALP1bOHTlyux6G4hnFnYDsLvBj+FL/NO9W9lu6UklF2WBpa6MoLaVHe65Hwzg8Ly&#13;
-LfZcT2FVk5edQ/YRInhKUcS8RYCQEjekRJ0R969iEQfi214AyFJUpKqr7bjcOGnHmmjrGUy/VxfX&#13;
-C75Jrb1KOV+dc8e5eq2U0+dP+OUVwfZZA7B22Lzbc7eWkJHN36e+CdadNfzv0LRiiHsUNofG86wR&#13;
-c2Npj1+izwCwUFLHDT5Ej3eGEx7AIUfzDrpJ68LSrJtyMxysnQ3ouZneZE+eGxI8YBsonfhOId0r&#13;
-X4P2dU5c5ie36x8pnFzyon63CEYrTFrOFaDJ6Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_67b180c4-6128-42f7-81fb-692cf41161e1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6whSatboDddw89fOBKCDK9IFGBrqV8zWwZcGzd/9CtV5a5usj1yyAxMkgsSWx547BomKSNoRkvU9&#13;
+AkoAZ2xxrQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a8028739-9215-435b-b57f-7c333e0a1a93"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>M7FBYSxgyByFw8J/IAiALT5UAHB4Z03v1b+q2oxbeBynFx3Iz74mbhXzsVzTbfYVdS1v/198pcUv&#13;
+VzX78S29Nw==</DigestValue></Reference></SignedInfo><SignatureValue>UrIIKUMMH7eIqk87VIY/NpznT6idxZSlShC/mXI9MMzaxfFmR5QdDZKABdj3tuBr6WpNiVEuJiI8&#13;
+KsgKezA9MKYuN6L8nn7xErcXZUjHwkDnojUO3ZFZZCFV4arb/2o29PGuMUtVbyxMesXvkUWt08LQ&#13;
+hSojwq8fTJ6w2sQ+fX3J1Y2+j2rgapZBrFL+na6p2qKus5N+b9eSD/MQ781DmW4rXBOgPN4MhT3I&#13;
+JMUivEDIi8mhA329Xb1TlKyRfgSSGGcNOwj7HAc9Lx+LH9fSrZQmFS9mao7ewb7MSpfjy6LqvQey&#13;
+3ohX2c0hu65SSojepW+i0NL7x9bvrJtXgaPvHg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -7828,4 +7828,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_32eadd18-65eb-48c2-a8fb-76676b5fe667" Target="#_fed9fcb2-a12f-48af-8260-c19328d9a7a8"><Timestamp>2022-03-21 14:20:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a8028739-9215-435b-b57f-7c333e0a1a93" Target="#_67b180c4-6128-42f7-81fb-692cf41161e1"><Timestamp>2022-03-21 14:21:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
