@@ -80,6 +80,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_7b7ZAKSWEeyvYtfXQctwkw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "TTEC_TEST:_EAYNUKksEeyHTd_gHpKfgQ",
+    "version" : "Latest",
+    "type" : "job"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_8fR_IKbVEey8lNFTp11arw",
     "version" : "0.1",
     "type" : "job"
