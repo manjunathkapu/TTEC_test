@@ -5,7 +5,7 @@
     <elementParameter contextMode="false" field="CHECK" name="displaySubjobs" value="true"/>
     <elementParameter contextMode="false" field="TEXT" name="AUTHOR" value="training@talend.com"/>
     <elementParameter contextMode="false" field="TEXT" name="STATUS" value=""/>
-    <elementParameter contextMode="false" field="TEXT" name="NAME" value="tLoop"/>
+    <elementParameter contextMode="false" field="TEXT" name="NAME" value="tMsgBox2"/>
     <elementParameter contextMode="false" field="TEXT" name="VERSION" value="0.1"/>
     <elementParameter contextMode="false" field="TEXT" name="PURPOSE" value=""/>
     <elementParameter contextMode="false" field="TEXT" name="DESCRIPTION" value=""/>
@@ -16,7 +16,7 @@
     <elementParameter contextMode="false" field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
     <elementParameter contextMode="false" field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
     <elementParameter contextMode="false" field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false"/>
-    <elementParameter contextMode="false" field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;D:/TOS-All-r14257-V2.4.0RC2/workspace/in.csv&quot;"/>
+    <elementParameter contextMode="false" field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;D:/TOS-All-r8293-V2.3.0RC2/workspace/in.csv&quot;"/>
     <elementParameter contextMode="false" field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter contextMode="false" field="PROPERTY_TYPE" name="PROPERTY_TYPE_IMPLICIT_CONTEXT" value=""/>
     <elementParameter contextMode="false" field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="BUILT_IN"/>
@@ -28,7 +28,7 @@
     <elementParameter contextMode="false" field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
-    <elementParameter contextMode="false" field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:zVvf9CJh/jlF3tOZoBxKGe9QH7YGl1hBongGOkFD"/>
+    <elementParameter contextMode="false" field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:vNuVvwt3GaFpy6Ak8R0Sy2vsSwxS4O27xYCpjHj/"/>
     <elementParameter contextMode="false" field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
@@ -44,22 +44,22 @@
     <elementParameter contextMode="false" field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter contextMode="false" field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
     <elementParameter contextMode="false" field="CHECK" name="ON_FILES_FLAG" value="false"/>
-    <elementParameter contextMode="false" field="DIRECTORY" name="FILE_PATH" value="&quot;&quot;"/>
-    <elementParameter contextMode="false" field="TEXT" name="FILENAME_STATS" value="&quot;&quot;"/>
-    <elementParameter contextMode="false" field="TEXT" name="FILENAME_LOGS" value="&quot;&quot;"/>
-    <elementParameter contextMode="false" field="TEXT" name="FILENAME_METTER" value="&quot;&quot;"/>
+    <elementParameter contextMode="false" field="DIRECTORY" name="FILE_PATH" value="&quot;D:/TOS-All-r8293-V2.3.0RC2/workspace/.metadata&quot;"/>
+    <elementParameter contextMode="false" field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter contextMode="false" field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter contextMode="false" field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;"/>
     <elementParameter contextMode="false" field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
     <elementParameter contextMode="false" field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
     <elementParameter contextMode="false" field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
     <elementParameter contextMode="false" field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value=""/>
-    <elementParameter contextMode="false" field="CLOSED_LIST" name="DB_TYPE" value=""/>
+    <elementParameter contextMode="false" field="CLOSED_LIST" name="DB_TYPE" value="tDBOutput"/>
     <elementParameter contextMode="false" field="TEXT" name="HOST" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="TEXT" name="PORT" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="TEXT" name="DBNAME" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="TEXT" name="USER" value="&quot;&quot;"/>
-    <elementParameter contextMode="false" field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:QJcECaExGik9EzFqqEPolJd47p0C0RekGL3myVXp"/>
+    <elementParameter contextMode="false" field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:oPHcxmEXDtSMaipaO0DXWLTFevDqFz+Bx4vHUppz"/>
     <elementParameter contextMode="false" field="FILE" name="DBFILE" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;"/>
@@ -79,69 +79,103 @@
     <routinesParameter id="_8qwkYFjNEdyj6eiqDt60Og" name="DemoRoutines"/>
     <routinesParameter id="_HKXfQGIZEd26GZmhFZLTPA" name="GetRandomPhoneNum"/>
   </parameters>
-  <node componentName="tLoop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="160">
-    <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="tLoop_1"/>
-    <elementParameter contextMode="false" field="TEXT" name="COMPONENT_NAME" value="tLoop"/>
-    <elementParameter contextMode="false" field="TEXT" name="TRANSLATED_COMPONENT_NAME" value="tLoop"/>
-    <elementParameter contextMode="false" field="TEXT" name="VERSION" value="0.102 (ALPHA)"/>
-    <elementParameter contextMode="false" field="TEXT" name="FAMILY" value="Orchestration"/>
+  <node componentName="tMsgBox" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="160">
+    <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="tMsgBox_1"/>
+    <elementParameter contextMode="false" field="TEXT" name="COMPONENT_NAME" value="tMsgBox"/>
+    <elementParameter contextMode="false" field="TEXT" name="TRANSLATED_COMPONENT_NAME" value="tMsgBox"/>
+    <elementParameter contextMode="false" field="TEXT" name="VERSION" value="0.101 (ALPHA)"/>
+    <elementParameter contextMode="false" field="TEXT" name="FAMILY" value="Misc"/>
     <elementParameter contextMode="false" field="CHECK" name="START" value="true"/>
     <elementParameter contextMode="false" field="CHECK" name="STARTABLE" value="true"/>
     <elementParameter contextMode="false" field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter contextMode="false" field="CHECK" name="DUMMY" value="false"/>
     <elementParameter contextMode="false" field="CHECK" name="TSTATCATCHER_STATS" value="false"/>
-    <elementParameter contextMode="false" field="TEXT" name="HELP" value="org.talend.help.tLoop"/>
+    <elementParameter contextMode="false" field="TEXT" name="HELP" value="org.talend.help.tMsgBox"/>
     <elementParameter contextMode="false" field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
     <elementParameter contextMode="false" field="TEXT" name="CURRENT_OS" value="Windows XP"/>
     <elementParameter contextMode="false" field="DIRECTORY" name="IREPORT_PATH" value=""/>
-    <elementParameter contextMode="false" field="RADIO" name="FORLOOP" value="true"/>
-    <elementParameter contextMode="false" field="RADIO" name="WHILELOOP" value="false"/>
-    <elementParameter contextMode="false" field="TEXT" name="FROM" value="1"/>
-    <elementParameter contextMode="false" field="TEXT" name="TO" value="10"/>
-    <elementParameter contextMode="false" field="TEXT" name="STEP" value="1"/>
-    <elementParameter contextMode="false" field="CHECK" name="INCREASE" value="true"/>
-    <elementParameter contextMode="false" field="TEXT" name="DECLARATION" value="int i=0"/>
-    <elementParameter contextMode="false" field="TEXT" name="CONDITION" value="i&lt;10"/>
-    <elementParameter contextMode="false" field="TEXT" name="ITERATION" value="i++"/>
+    <elementParameter contextMode="false" field="TEXT" name="TITLE" value="&quot;Talend Open Studio&quot;"/>
+    <elementParameter contextMode="false" field="CLOSED_LIST" name="BUTTONS" value="4"/>
+    <elementParameter contextMode="false" field="CLOSED_LIST" name="ICON" value="QUESTION_MESSAGE"/>
+    <elementParameter contextMode="false" field="TEXT" name="QUESTION_TITLE" value="&quot;Window Title&quot;"/>
+    <elementParameter contextMode="false" field="MEMO" name="QUESTION_LABEL" value="&quot;Question ?&quot;"/>
+    <elementParameter contextMode="false" field="MEMO" name="MESSAGE" value="&quot;This job is just a demo. Do you wan't to continue ?\n\nWhat's your choice?&quot;"/>
+    <elementParameter contextMode="false" field="TECHNICAL" name="NOT_SYNCHRONIZED_SCHEMA:SCHEMA_TYPE" value="BUILT_IN"/>
+    <elementParameter contextMode="false" field="TECHNICAL" name="NOT_SYNCHRONIZED_SCHEMA:REPOSITORY_SCHEMA_TYPE" value=""/>
     <elementParameter contextMode="false" field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
     <elementParameter contextMode="false" field="TEXT" name="HINT" value="__UNIQUE_NAME__"/>
     <elementParameter contextMode="false" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter contextMode="false" field="MEMO" name="COMMENT" value=""/>
-    <metadata connector="FLOW" name="tLoop_1"/>
+    <metadata connector="FLOW" name="tMsgBox_1"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="160">
-    <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="tJava_1"/>
-    <elementParameter contextMode="false" field="TEXT" name="COMPONENT_NAME" value="tJava"/>
-    <elementParameter contextMode="false" field="TEXT" name="TRANSLATED_COMPONENT_NAME" value="tJava"/>
+  <node componentName="tMsgBox" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="320">
+    <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="tMsgBox_3"/>
+    <elementParameter contextMode="false" field="TEXT" name="COMPONENT_NAME" value="tMsgBox"/>
+    <elementParameter contextMode="false" field="TEXT" name="TRANSLATED_COMPONENT_NAME" value="tMsgBox"/>
     <elementParameter contextMode="false" field="TEXT" name="VERSION" value="0.101 (ALPHA)"/>
-    <elementParameter contextMode="false" field="TEXT" name="FAMILY" value="Custom Code"/>
+    <elementParameter contextMode="false" field="TEXT" name="FAMILY" value="Misc"/>
     <elementParameter contextMode="false" field="CHECK" name="START" value="false"/>
     <elementParameter contextMode="false" field="CHECK" name="STARTABLE" value="true"/>
     <elementParameter contextMode="false" field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter contextMode="false" field="CHECK" name="DUMMY" value="false"/>
     <elementParameter contextMode="false" field="CHECK" name="TSTATCATCHER_STATS" value="false"/>
-    <elementParameter contextMode="false" field="TEXT" name="HELP" value="org.talend.help.tJava"/>
+    <elementParameter contextMode="false" field="TEXT" name="HELP" value="org.talend.help.tMsgBox"/>
     <elementParameter contextMode="false" field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
     <elementParameter contextMode="false" field="TEXT" name="CURRENT_OS" value="Windows XP"/>
     <elementParameter contextMode="false" field="DIRECTORY" name="IREPORT_PATH" value=""/>
-    <elementParameter contextMode="false" field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;CURRENT ITERATION:&quot;+globalMap.get(&quot;tLoop_1_CURRENT_VALUE&quot;) );"/>
-    <elementParameter contextMode="false" field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter contextMode="false" field="TEXT" name="TITLE" value="&quot;Talend Open Studio&quot;"/>
+    <elementParameter contextMode="false" field="CLOSED_LIST" name="BUTTONS" value="0"/>
+    <elementParameter contextMode="false" field="CLOSED_LIST" name="ICON" value="INFORMATION_MESSAGE"/>
+    <elementParameter contextMode="false" field="TEXT" name="QUESTION_TITLE" value="&quot;Window Title&quot;"/>
+    <elementParameter contextMode="false" field="MEMO" name="QUESTION_LABEL" value="&quot;Question ?&quot;"/>
+    <elementParameter contextMode="false" field="MEMO" name="MESSAGE" value="&quot;You choice is: YES\nTo continue... click on the Run button ;)&quot;"/>
     <elementParameter contextMode="false" field="TECHNICAL" name="NOT_SYNCHRONIZED_SCHEMA:SCHEMA_TYPE" value="BUILT_IN"/>
     <elementParameter contextMode="false" field="TECHNICAL" name="NOT_SYNCHRONIZED_SCHEMA:REPOSITORY_SCHEMA_TYPE" value=""/>
-    <elementParameter contextMode="false" field="TEXT" name="LABEL" value="                                                           __UNIQUE_NAME__           &lt;br&gt;__CODE__"/>
-    <elementParameter contextMode="false" field="TEXT" name="HINT" value="__UNIQUE_NAME__"/>
+    <elementParameter contextMode="false" field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter contextMode="false" field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter contextMode="false" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter contextMode="false" field="MEMO" name="COMMENT" value=""/>
-    <metadata connector="FLOW" name="tJava_1"/>
+    <metadata connector="FLOW" name="tMsgBox_3"/>
   </node>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tJava_1">
-    <elementParameter contextMode="false" field="CHECK" name="ENABLE_PARALLEL" value="false"/>
-    <elementParameter contextMode="false" field="TEXT" name="NUMBER_PARALLEL" value="2"/>
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="320">
+    <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="tDie_1"/>
+    <elementParameter contextMode="false" field="TEXT" name="COMPONENT_NAME" value="tDie"/>
+    <elementParameter contextMode="false" field="TEXT" name="TRANSLATED_COMPONENT_NAME" value="tDie"/>
+    <elementParameter contextMode="false" field="TEXT" name="VERSION" value="0.101 (ALPHA)"/>
+    <elementParameter contextMode="false" field="TEXT" name="FAMILY" value="Logs &amp; Errors"/>
+    <elementParameter contextMode="false" field="CHECK" name="START" value="false"/>
+    <elementParameter contextMode="false" field="CHECK" name="STARTABLE" value="true"/>
+    <elementParameter contextMode="false" field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter contextMode="false" field="CHECK" name="DUMMY" value="false"/>
+    <elementParameter contextMode="false" field="CHECK" name="TSTATCATCHER_STATS" value="false"/>
+    <elementParameter contextMode="false" field="TEXT" name="HELP" value="org.talend.help.tDie"/>
+    <elementParameter contextMode="false" field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter contextMode="false" field="TEXT" name="CURRENT_OS" value="Windows XP"/>
+    <elementParameter contextMode="false" field="DIRECTORY" name="IREPORT_PATH" value=""/>
+    <elementParameter contextMode="false" field="TEXT" name="MESSAGE" value="&quot;You choice is: NO&quot;"/>
+    <elementParameter contextMode="false" field="TEXT" name="CODE" value="4"/>
+    <elementParameter contextMode="false" field="CLOSED_LIST" name="PRIORITY" value="1"/>
+    <elementParameter contextMode="false" field="TECHNICAL" name="NOT_SYNCHRONIZED_SCHEMA:SCHEMA_TYPE" value="BUILT_IN"/>
+    <elementParameter contextMode="false" field="TECHNICAL" name="NOT_SYNCHRONIZED_SCHEMA:REPOSITORY_SCHEMA_TYPE" value=""/>
+    <elementParameter contextMode="false" field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter contextMode="false" field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter contextMode="false" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter contextMode="false" field="MEMO" name="COMMENT" value=""/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tMsgBox_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMsgBox_1" target="tMsgBox_3">
+    <elementParameter contextMode="false" field="MEMO_JAVA" name="CONDITION" value="((String)globalMap.get(&quot;tMsgBox_1_RESULT&quot;)).equals(&quot;0&quot;)"/>
     <elementParameter contextMode="false" field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter contextMode="false" field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
-    <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="iterate5"/>
+    <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="If5"/>
   </connection>
-  <note opaque="true" posX="32" posY="32" sizeHeight="64" sizeWidth="673" text="Generate a iteration from a loop set in the tLoop component">
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tMsgBox_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMsgBox_1" target="tDie_1">
+    <elementParameter contextMode="false" field="MEMO_JAVA" name="CONDITION" value="((String)globalMap.get(&quot;tMsgBox_1_RESULT&quot;)).equals(&quot;1&quot;)"/>
+    <elementParameter contextMode="false" field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter contextMode="false" field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="If6"/>
+  </connection>
+  <note opaque="true" posX="64" posY="32" sizeHeight="64" sizeWidth="481" text="Opens a dialog box with several buttons requiring action from the user. ">
     <elementParameter contextMode="false" field="COLOR" name="NOTE_COLOR" value="255;255;203"/>
     <elementParameter contextMode="false" field="COLOR" name="NOTETXT_COLOR" value="0;0;0"/>
     <elementParameter contextMode="false" field="RADIO" name="NOTETXT_LEFT" value="false"/>
@@ -159,20 +193,40 @@
   <subjob>
     <elementParameter contextMode="false" field="CHECK" name="COLLAPSED" value="false"/>
     <elementParameter contextMode="false" field="CHECK" name="SHOW_SUBJOB_TITLE" value="false"/>
-    <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="tLoop_1"/>
+    <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="tMsgBox_1"/>
     <elementParameter contextMode="false" field="TEXT" name="SUBJOB_TITLE" value=""/>
     <elementParameter contextMode="false" field="COLOR" name="SUBJOB_TITLE_COLOR" value="50;50;250"/>
     <elementParameter contextMode="false" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
     <elementParameter contextMode="false" field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
     <elementParameter contextMode="false" field="CHECK" name="SUBJOB_DISPLAYED" value="true"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5f7a115b-0812-4e2b-a4ff-1fe9d04bb7d6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>57FWb+BKtyrnX9YyLSCplIZTEZSiA0oTmriGZLADyBF1KgWEWIz4lPZLa9AF5Aw+qs+JupHLofW+&#13;
-Fitp3rdnAQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2d340128-ea08-4198-b74a-b88f8dd6e0cb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pENJBMXf7O1CRt4p2B75YoYd9gGYGd5SGqeiNuPbKp7T3GvATzpFdk+705JlpCq/XKxNgAUezq3w&#13;
-tdtqgpxzBw==</DigestValue></Reference></SignedInfo><SignatureValue>dApvTyCF1tzGfJrrjbpe8/fF0wMalPOMI/OY0fh/xEwnk6uvXsGpxbn4OOR5zeEYS1ZthXONHzEt&#13;
-MUXELDUuBRbJeoT9KOiHQRuW0YneXKji9vAXkVu+A39C14zGkj89qN9uWTzvL9iLrEjwS12EyNjA&#13;
-1MU+S3Vl562sB2wdT+W91a1j3JFO7lkS/h/Ha2grpRNkSw33eisg+XzrElN1Q7/dTUeeNA8DqjfO&#13;
-jOjnUTPUhzugrhpCuNhzrQ0QQskyTUsDRUkiz2nZfUuwTFvKvol3OHuwUMrB2wGIY/kwwPB4y6hs&#13;
-S/APROAsit8pvgid3WASILlMXEHKPxBxzo6MUg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter contextMode="false" field="CHECK" name="COLLAPSED" value="false"/>
+    <elementParameter contextMode="false" field="CHECK" name="SHOW_SUBJOB_TITLE" value="false"/>
+    <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="tMsgBox_3"/>
+    <elementParameter contextMode="false" field="TEXT" name="SUBJOB_TITLE" value=""/>
+    <elementParameter contextMode="false" field="COLOR" name="SUBJOB_TITLE_COLOR" value="50;50;250"/>
+    <elementParameter contextMode="false" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+    <elementParameter contextMode="false" field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter contextMode="false" field="CHECK" name="SUBJOB_DISPLAYED" value="true"/>
+  </subjob>
+  <subjob>
+    <elementParameter contextMode="false" field="CHECK" name="COLLAPSED" value="false"/>
+    <elementParameter contextMode="false" field="CHECK" name="SHOW_SUBJOB_TITLE" value="false"/>
+    <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="tDie_1"/>
+    <elementParameter contextMode="false" field="TEXT" name="SUBJOB_TITLE" value=""/>
+    <elementParameter contextMode="false" field="COLOR" name="SUBJOB_TITLE_COLOR" value="50;50;250"/>
+    <elementParameter contextMode="false" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+    <elementParameter contextMode="false" field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter contextMode="false" field="CHECK" name="SUBJOB_DISPLAYED" value="true"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_01ae1c4e-1e9f-465b-8a4b-30928142e1f6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>H296Xdg9h961WA/vYz1V3aQw9unOviCpUnGkkf1tisZXFc7X15YK0oYTrvplERwOPyq7jDNwtRXS&#13;
+GeduQZGnLQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_be4af5a3-8da3-45d4-b541-33c907ce896b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pNhWqXWGxnx6tyUmCsQ1uw6lQ3F1QoPTFSn5PCmgGz0jRlr+oQPB8sPAb3Kr/JYpbIY6cWW4LKpi&#13;
+VE66MAweRg==</DigestValue></Reference></SignedInfo><SignatureValue>a/Q7RGyXtRWvfx+yAdvr7Afcjxx28Qlh5nyItH6+OnD31X3RPvujtVdq6Kx5TG519Th3+seq6eDQ&#13;
+XyCOhwnlMFiGH3Lub58fDJskjedSBSUJlsKoKithd8Enr1R2YgQYzSl6wj1vUutj5pncWMB4W7F7&#13;
+tbFRp9XFhgAWitz6Cl5rInkZoV33L3K2FGoec82dy4NiuuTH4kl0leIFLM0/hZ67T7ND2lIs92bN&#13;
+62LPUtxW/VwSKNublpbVW9mVR2UaLbDGKYa1sTZFu1hbfj7GGpzHWe2L3e7+XqvGvPyMEip0Thkh&#13;
+4+in7OyYjfOdcZLVFWtQ9W9ElxPeaDFpwGpvjQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -194,4 +248,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2d340128-ea08-4198-b74a-b88f8dd6e0cb" Target="#_5f7a115b-0812-4e2b-a4ff-1fe9d04bb7d6"><Timestamp>2022-03-21 20:38:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_be4af5a3-8da3-45d4-b541-33c907ce896b" Target="#_01ae1c4e-1e9f-465b-8a4b-30928142e1f6"><Timestamp>2022-03-22 14:21:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
