@@ -4,9 +4,6 @@
     "contextName" : "Default",
     "repoId" : "_-IYOsKPGEeyWs8XZ25ffQw",
     "parameterList" : [ {
-      "id" : "_-Ix3VqPGEeyWs8XZ25ffQw",
-      "name" : "Oracle_Login"
-    }, {
       "id" : "_-Ix3UaPGEeyWs8XZ25ffQw",
       "name" : "Oracle_Server"
     }, {
