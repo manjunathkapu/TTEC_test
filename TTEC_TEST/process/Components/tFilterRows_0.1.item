@@ -5,7 +5,7 @@
     <elementParameter contextMode="false" field="CHECK" name="displaySubjobs" value="true"/>
     <elementParameter contextMode="false" field="TEXT" name="AUTHOR" value="training@talend.com"/>
     <elementParameter contextMode="false" field="TEXT" name="STATUS" value=""/>
-    <elementParameter contextMode="false" field="TEXT" name="NAME" value="tDenormalize"/>
+    <elementParameter contextMode="false" field="TEXT" name="NAME" value="tFilterRows"/>
     <elementParameter contextMode="false" field="TEXT" name="VERSION" value="0.1"/>
     <elementParameter contextMode="false" field="TEXT" name="PURPOSE" value=""/>
     <elementParameter contextMode="false" field="TEXT" name="DESCRIPTION" value=""/>
@@ -28,7 +28,7 @@
     <elementParameter contextMode="false" field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
-    <elementParameter contextMode="false" field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:nANCIa2Qqnsp44U7kBd+mHN4iQsy4RDIDWUZi1Lh"/>
+    <elementParameter contextMode="false" field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:VdmOAsf1L3JxRlyK2drgSQ9W49r8M6bYlg3CY5I6"/>
     <elementParameter contextMode="false" field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
@@ -59,7 +59,7 @@
     <elementParameter contextMode="false" field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="TEXT" name="USER" value="&quot;&quot;"/>
-    <elementParameter contextMode="false" field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:WUyYcz6Mq2BdTY876yH0DEmBb1ij0Yy8eBNKyPGb"/>
+    <elementParameter contextMode="false" field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XwTlA9fD+bDZGIaHD3kD4z1i+ej6olWyTlj4RtDj"/>
     <elementParameter contextMode="false" field="FILE" name="DBFILE" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;"/>
     <elementParameter contextMode="false" field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;"/>
@@ -79,7 +79,7 @@
     <routinesParameter id="_8qwkYFjNEdyj6eiqDt60Og" name="DemoRoutines"/>
     <routinesParameter id="_HKXfQGIZEd26GZmhFZLTPA" name="GetRandomPhoneNum"/>
   </parameters>
-  <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="192">
+  <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="288">
     <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1"/>
     <elementParameter contextMode="false" field="TEXT" name="COMPONENT_NAME" value="tRowGenerator"/>
     <elementParameter contextMode="false" field="TEXT" name="TRANSLATED_COMPONENT_NAME" value="tRowGenerator"/>
@@ -97,12 +97,16 @@
     <elementParameter contextMode="false" field="CHECK" name="REPOSITORY_ALLOW_AUTO_SWITCH" value="false"/>
     <elementParameter contextMode="false" field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="BUILT_IN"/>
     <elementParameter contextMode="false" field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value=""/>
-    <elementParameter contextMode="false" field="TEXT" name="NB_ROWS" value="5"/>
+    <elementParameter contextMode="false" field="TEXT" name="NB_ROWS" value="100"/>
     <elementParameter contextMode="false" field="TABLE" name="VALUES">
-      <elementValue elementRef="SCHEMA_COLUMN" value="os"/>
-      <elementValue elementRef="ARRAY" value="&quot;redhat&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="version"/>
-      <elementValue elementRef="ARRAY" value="&quot;3.0&quot;,&quot;5.0&quot;,&quot;8.0&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="number"/>
+      <elementValue elementRef="ARRAY" value="1,2,3,4,5,6,7,8,9,10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="txt"/>
+      <elementValue elementRef="ARRAY" value="&quot;text1&quot;, &quot;text2&quot;, &quot;text3&quot;, &quot;text4&quot;, &quot;text5&quot;, &quot;text6&quot;, &quot;text7&quot;, &quot;text8&quot;, &quot;text9&quot;, &quot;text10&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
+      <elementValue elementRef="ARRAY" value="&quot;2007-01-21&quot;, &quot;2007-02-22&quot;, &quot;2007-03-23&quot;, &quot;2006-04-24&quot;, &quot;2006-05-25&quot;, &quot;2006-06-26&quot;, &quot;2005-07-27&quot;, &quot;2005-08-28&quot;, &quot;2005-08-29&quot;, &quot;2004-11-21&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="flag"/>
+      <elementValue elementRef="ARRAY" value="true,false"/>
     </elementParameter>
     <elementParameter contextMode="false" field="EXTERNAL" name="MAP" value=""/>
     <elementParameter contextMode="false" field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
@@ -110,11 +114,66 @@
     <elementParameter contextMode="false" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter contextMode="false" field="MEMO" name="COMMENT" value=""/>
     <metadata connector="FLOW" name="tRowGenerator_1">
-      <column comment="" defaultValue="" key="false" name="os" nullable="false" pattern="" sourceType="" type="id_String"/>
-      <column comment="" defaultValue="" key="false" name="version" nullable="false" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="3" name="number" nullable="false" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" key="false" length="20" name="txt" nullable="false" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="10" name="date" nullable="false" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="5" name="flag" nullable="false" pattern="" sourceType="" type="id_Boolean"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="192">
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="288">
+    <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="tFilterRow_1"/>
+    <elementParameter contextMode="false" field="TEXT" name="COMPONENT_NAME" value="tFilterRow"/>
+    <elementParameter contextMode="false" field="TEXT" name="TRANSLATED_COMPONENT_NAME" value="tFilterRow"/>
+    <elementParameter contextMode="false" field="TEXT" name="VERSION" value="0.102 (ALPHA)"/>
+    <elementParameter contextMode="false" field="TEXT" name="FAMILY" value="Processing"/>
+    <elementParameter contextMode="false" field="CHECK" name="STARTABLE" value="false"/>
+    <elementParameter contextMode="false" field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter contextMode="false" field="CHECK" name="DUMMY" value="false"/>
+    <elementParameter contextMode="false" field="CHECK" name="TSTATCATCHER_STATS" value="false"/>
+    <elementParameter contextMode="false" field="TEXT" name="HELP" value="org.talend.help.tFilterRow"/>
+    <elementParameter contextMode="false" field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter contextMode="false" field="TEXT" name="CURRENT_OS" value="Windows XP"/>
+    <elementParameter contextMode="false" field="DIRECTORY" name="IREPORT_PATH" value=""/>
+    <elementParameter contextMode="false" field="CHECK" name="REPOSITORY_ALLOW_AUTO_SWITCH" value="false"/>
+    <elementParameter contextMode="false" field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="BUILT_IN"/>
+    <elementParameter contextMode="false" field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value=""/>
+    <elementParameter contextMode="false" field="TECHNICAL" name="SCHEMA_FILTER:SCHEMA_TYPE" value="BUILT_IN"/>
+    <elementParameter contextMode="false" field="TECHNICAL" name="SCHEMA_FILTER:REPOSITORY_SCHEMA_TYPE" value=""/>
+    <elementParameter contextMode="false" field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="BUILT_IN"/>
+    <elementParameter contextMode="false" field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value=""/>
+    <elementParameter contextMode="false" field="CLOSED_LIST" name="LOGICAL_OP" value="||"/>
+    <elementParameter contextMode="false" field="TABLE" name="CONDITIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="number"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="5"/>
+    </elementParameter>
+    <elementParameter contextMode="false" field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter contextMode="false" field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use $input_row to define the condition.&#10;// input_row.columnName1.equals(&quot;foo&quot;) || !(input_row.columnName2.equals(&quot;xo&quot;))&#10;&#10;// replace the following expression by your own filter condition&#10;input_row.columnName1.equals(input_row.columnName2)&#10;    "/>
+    <elementParameter contextMode="false" field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter contextMode="false" field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter contextMode="false" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter contextMode="false" field="MEMO" name="COMMENT" value=""/>
+    <metadata connector="FLOW" name="tFilterRow_1">
+      <column comment="" key="false" length="3" name="number" nullable="false" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" key="false" length="20" name="txt" nullable="false" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="10" name="date" nullable="false" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="5" name="flag" nullable="false" pattern="" sourceType="" type="id_Boolean"/>
+    </metadata>
+    <metadata connector="FILTER" name="FILTER">
+      <column comment="" key="false" length="3" name="number" nullable="false" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" key="false" length="20" name="txt" nullable="false" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="10" name="date" nullable="false" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="5" name="flag" nullable="false" pattern="" sourceType="" type="id_Boolean"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="3" name="number" nullable="false" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" key="false" length="20" name="txt" nullable="false" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="10" name="date" nullable="false" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="5" name="flag" nullable="false" pattern="" sourceType="" type="id_Boolean"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="160">
     <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="tLogRow_1"/>
     <elementParameter contextMode="false" field="TEXT" name="COMPONENT_NAME" value="tLogRow"/>
     <elementParameter contextMode="false" field="TEXT" name="TRANSLATED_COMPONENT_NAME" value="tLogRow"/>
@@ -136,53 +195,79 @@
     <elementParameter contextMode="false" field="RADIO" name="VERTICAL" value="false"/>
     <elementParameter contextMode="false" field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
     <elementParameter contextMode="false" field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter contextMode="false" field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter contextMode="false" field="CHECK" name="PRINT_UNIQUE_NAME" value="true"/>
     <elementParameter contextMode="false" field="CHECK" name="PRINT_COLNAMES" value="false"/>
     <elementParameter contextMode="false" field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter contextMode="false" field="TABLE" name="LENGTHS"/>
+    <elementParameter contextMode="false" field="TABLE" name="LENGTHS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="number"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="txt"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="flag"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
     <elementParameter contextMode="false" field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter contextMode="false" field="TEXT" name="HINT" value="__UNIQUE_NAME__"/>
+    <elementParameter contextMode="false" field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter contextMode="false" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter contextMode="false" field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="false"/>
     <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" defaultValue="" key="false" name="os" nullable="false" pattern="" sourceType="" type="id_String"/>
-      <column comment="" defaultValue="" key="false" name="version" nullable="false" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="3" name="number" nullable="false" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" key="false" length="20" name="txt" nullable="false" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="10" name="date" nullable="false" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="5" name="flag" nullable="false" pattern="" sourceType="" type="id_Boolean"/>
     </metadata>
   </node>
-  <node componentName="tDenormalize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="192">
-    <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="tDenormalize_1"/>
-    <elementParameter contextMode="false" field="TEXT" name="COMPONENT_NAME" value="tDenormalize"/>
-    <elementParameter contextMode="false" field="TEXT" name="TRANSLATED_COMPONENT_NAME" value="tDenormalize"/>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="416">
+    <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="tLogRow_2"/>
+    <elementParameter contextMode="false" field="TEXT" name="COMPONENT_NAME" value="tLogRow"/>
+    <elementParameter contextMode="false" field="TEXT" name="TRANSLATED_COMPONENT_NAME" value="tLogRow"/>
     <elementParameter contextMode="false" field="TEXT" name="VERSION" value="0.101 (ALPHA)"/>
-    <elementParameter contextMode="false" field="TEXT" name="FAMILY" value="Processing/Fields"/>
+    <elementParameter contextMode="false" field="TEXT" name="FAMILY" value="Logs &amp; Errors"/>
     <elementParameter contextMode="false" field="CHECK" name="STARTABLE" value="false"/>
     <elementParameter contextMode="false" field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter contextMode="false" field="CHECK" name="DUMMY" value="false"/>
     <elementParameter contextMode="false" field="CHECK" name="TSTATCATCHER_STATS" value="false"/>
-    <elementParameter contextMode="false" field="TEXT" name="HELP" value="org.talend.help.tDenormalize"/>
-    <elementParameter contextMode="false" field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter contextMode="false" field="TEXT" name="HELP" value="org.talend.help.tLogRow"/>
+    <elementParameter contextMode="false" field="CHECK" name="UPDATE_COMPONENTS" value="true"/>
     <elementParameter contextMode="false" field="TEXT" name="CURRENT_OS" value="Windows XP"/>
     <elementParameter contextMode="false" field="DIRECTORY" name="IREPORT_PATH" value=""/>
     <elementParameter contextMode="false" field="CHECK" name="REPOSITORY_ALLOW_AUTO_SWITCH" value="false"/>
     <elementParameter contextMode="false" field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="BUILT_IN"/>
     <elementParameter contextMode="false" field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value=""/>
-    <elementParameter contextMode="false" field="TABLE" name="DENORMALIZE_COLUMNS">
-      <elementValue elementRef="INPUT_COLUMN" value="version"/>
-      <elementValue elementRef="DELIMITER" value="&quot;;&quot;"/>
-      <elementValue elementRef="MERGE" value="true"/>
+    <elementParameter contextMode="false" field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter contextMode="false" field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter contextMode="false" field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter contextMode="false" field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter contextMode="false" field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter contextMode="false" field="CHECK" name="PRINT_UNIQUE_NAME" value="true"/>
+    <elementParameter contextMode="false" field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter contextMode="false" field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter contextMode="false" field="TABLE" name="LENGTHS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="number"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="txt"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="flag"/>
+      <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
-    <elementParameter contextMode="false" field="LABEL" name="NOTE" value=""/>
     <elementParameter contextMode="false" field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
     <elementParameter contextMode="false" field="TEXT" name="HINT" value="__UNIQUE_NAME__"/>
     <elementParameter contextMode="false" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter contextMode="false" field="MEMO" name="COMMENT" value=""/>
-    <metadata connector="FLOW" name="tDenormalize_1">
-      <column comment="" defaultValue="" key="false" name="os" nullable="false" pattern="" sourceType="" type="id_String"/>
-      <column comment="" defaultValue="" key="false" name="version" nullable="false" pattern="" sourceType="" type="id_String"/>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="false"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="false" length="3" name="number" nullable="false" pattern="" sourceType="" type="id_Integer"/>
+      <column comment="" key="false" length="20" name="txt" nullable="false" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="10" name="date" nullable="false" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" length="5" name="flag" nullable="false" pattern="" sourceType="" type="id_Boolean"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tRowGenerator_1" offsetLabelX="0" offsetLabelY="0" source="tRowGenerator_1" target="tDenormalize_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tRowGenerator_1" offsetLabelX="0" offsetLabelY="0" source="tRowGenerator_1" target="tFilterRow_1">
     <elementParameter contextMode="false" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter contextMode="false" field="CHECK" name="USEROWLABEL" value="true"/>
     <elementParameter contextMode="false" field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
@@ -193,7 +278,7 @@
     <elementParameter contextMode="false" field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
     <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDenormalize_1" offsetLabelX="0" offsetLabelY="0" source="tDenormalize_1" target="tLogRow_1">
+  <connection connectorName="FILTER" label="row2" lineStyle="0" metaname="tFilterRow_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFilterRow_1" target="tLogRow_2">
     <elementParameter contextMode="false" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter contextMode="false" field="CHECK" name="USEROWLABEL" value="true"/>
     <elementParameter contextMode="false" field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
@@ -204,7 +289,18 @@
     <elementParameter contextMode="false" field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
     <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="row2"/>
   </connection>
-  <note opaque="true" posX="96" posY="64" sizeHeight="64" sizeWidth="513" text="Denormalizes the input flow based on one column. ">
+  <connection connectorName="REJECT" label="row3" lineStyle="0" metaname="tFilterRow_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFilterRow_1" target="tLogRow_1">
+    <elementParameter contextMode="false" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter contextMode="false" field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter contextMode="false" field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter contextMode="false" field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter contextMode="false" field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter contextMode="false" field="TABLE" name="THRESHLODS"/>
+    <elementParameter contextMode="false" field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter contextMode="false" field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter contextMode="false" field="TEXT" name="UNIQUE_NAME" value="row3"/>
+  </connection>
+  <note opaque="true" posX="32" posY="32" sizeHeight="64" sizeWidth="641" text="Compares a column from the main flow with a reference column from the lookup flow&#13;&#10;and outputs the main flow data displaying the distance ">
     <elementParameter contextMode="false" field="COLOR" name="NOTE_COLOR" value="255;255;203"/>
     <elementParameter contextMode="false" field="COLOR" name="NOTETXT_COLOR" value="0;0;0"/>
     <elementParameter contextMode="false" field="RADIO" name="NOTETXT_LEFT" value="false"/>
@@ -229,13 +325,13 @@
     <elementParameter contextMode="false" field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
     <elementParameter contextMode="false" field="CHECK" name="SUBJOB_DISPLAYED" value="true"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_28ee2e24-c6ea-438d-8a01-136880a44130"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>B1Aue7cKlzXkyVtz6HOtB/dPOfAu3WPCH+Xc6/MWWExcKN2ZnTlgjt2gUXKqpRo+XdUec6fnw7HG&#13;
-AjhIg1a63Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_12eff57b-4f49-4968-a5f7-f779d0fbc3d1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>C1ySvQWKbHDFyMjNa8eafV3UKKNh/wX2IelhtsTBBpM56BkUY0gIYvdlw6jY6R9cchow+IFR7+1B&#13;
-ch9R7PaGYg==</DigestValue></Reference></SignedInfo><SignatureValue>XErdHPgZy9tqBqB81s4y7XgkA+TLLp083wUS/+FNWC/Kfzl8rtUwWc6nVqWl5ESIBYf6DKl3v18o&#13;
-VL2037HWFU5BxbHZ0Jx58/0UdnUzJ9iP0zvAFyU9kW0hLnY9pq/zjgOzvrqfcVWjcs46nibJKRWN&#13;
-13Xk1qR2jwB2Yo0oEQ3kqwGA+5HnkbVU6Exb/ISaqXkr0D4telulmXjkz3Xv2Gr9OtF/dC2XHuWC&#13;
-/0ztkxfZfQfKGVCufv32vMzwXVIatFHys3DhqIgRbl4cp8Rqh0/JF+mEmTOdxjC8uhSAS7enBNSf&#13;
-Kaavc+hKAjGHI4L8g0ZFZ/Dg5Obeu6RoCtVa6g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_80586c97-08c6-41de-92fd-5cfd4799bb3b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>K15HlxqWUVw/CI5VNqAfjMMjSmLEc6fjvwZ8UQ0Ksa/7mTcjicQfcv5ujm5bFIS1YMosnZIMfbxW&#13;
+3j91P90tHQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_afc0b693-206b-4789-b6c4-8ffef4044641"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>U+eAjy7Y1yIZO8qqoSpsocwzswhsuEkqXFMgZNuhB3p8NTqcqd84qLzTu4LeQPv7c/VqJn4LyNvs&#13;
++bCcGdOJGw==</DigestValue></Reference></SignedInfo><SignatureValue>Lizl8lgZMbsVNgdL4IHMAwe236fvOqlgaktfi63DlETAr+BZGnw+E/0ULNE7JWUU9CNWb18aInwj&#13;
+yb0tBtn53JywusiEXltvTHJzotJZhUNatYUKkavBPl5EK/CPgc4aDyxxwvKmOLTposk5QyfnP611&#13;
+W9KHIlFGjwGFMKBj/j5Fvx6qM4jO51XNBAdgQLOPG7q3mRTqp5dIsG/c72GrumPLnj2RTFagy2Gt&#13;
+3VOoOUQSkhicNjQlbHFyYnoAKCFMOV+CmDzIPOiy1P1PB7AUsvvdaCmtU+Lu8+H/YHTo7AP3o5qE&#13;
+zcpjdS3UQo3BfSUsAK6rPd2lHKQTDNNa+OEM+A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -257,4 +353,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_12eff57b-4f49-4968-a5f7-f779d0fbc3d1" Target="#_28ee2e24-c6ea-438d-8a01-136880a44130"><Timestamp>2022-03-21 20:38:25</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_afc0b693-206b-4789-b6c4-8ffef4044641" Target="#_80586c97-08c6-41de-92fd-5cfd4799bb3b"><Timestamp>2022-03-22 14:31:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
